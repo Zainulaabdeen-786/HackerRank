@@ -42,3 +42,38 @@ python students = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti'
 The lowest grade of 37.2 belongs to Tina. The second lowest grade of 37.21 belongs to both Harry and Berry, so we order their names alphabetically and print each name on a new line.
 """
 
+if __name__ == '__main__':
+    students=[]
+    lowest_score = 100
+    second_lowest = 100
+    for i in range(int(input())):
+        name = input()
+        score = float(input())
+        if lowest_score > score:
+            lowest_score = score
+        students.append([name,score])
+    for i in students:
+        if second_lowest > i[1] and i[1] != lowest_score:
+            second_lowest = i[1]
+    students.sort()
+    for i in students:
+        if i[1]== second_lowest:
+            print(i[0])
+""" 
+Or Simply-
+if __name__ == '__main__':
+    students = []
+    scores=[]
+    for i in range(int(input())):
+        name = input()
+        score = float(input())
+        students.append([name, score])
+        scores.append(score)
+    
+    scores = list(set(scores))
+    scores.sort()
+    students.sort()
+    for x in students:
+        if x[1] == scores[1]:
+            print(x[0])
+"""
