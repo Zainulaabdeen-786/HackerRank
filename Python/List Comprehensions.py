@@ -45,3 +45,8 @@ if __name__ == '__main__':
     List = [[i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1)]
     selected_list = [[q[0],q[1],q[2]] for q in List if q[0]+q[1]+q[2] != n]
     print(selected_list)
+
+"""
+Or simply- permutations = [[i, j, k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if i + j + k != n]
+           print(permutations)
+"""
