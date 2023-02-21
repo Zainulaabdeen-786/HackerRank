@@ -1,9 +1,6 @@
 """
-Given an integer, , print the following values for each integer  from  to :
-Decimal
-Octal
-Hexadecimal (capitalized)
-Binary
+Given an integer, n, print the following values for each integer i from 1 to n:
+Decimal Octal   Hexadecimal (capitalized)   Binary
 
 Function Description
 Complete the print_formatted function in the editor below. print_formatted has the following parameters:
